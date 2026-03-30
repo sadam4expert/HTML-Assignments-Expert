@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+
+            width: 1000px;
+            height: 200px;
+
+            background-color: blueviolet;
+
+            animation-name: popup;
+            animation-duration: 5s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: aliceblue;
+        }
+
+        @keyframes popup {
+
+            0% {
+
+                width: 0px;
+                background-color: red;
+                
+            }
+            
+            50% {
+                width: 500px;
+                background-color: yellowgreen;
+                
+            }
+            
+            100% {
+                width: 1000px;
+                background-color: green;
+            }
+        }
+
+        .b0{
+visibility: hidden;        
+            animation-name: ab0;
+            animation-duration: 5s;
+        }
+        @keyframes ab0 {
+            
+            0% {
+visibility: visible            }
+            
+            49% {
+                display: block;
+            }
+            50% {
+                display: none;
+            }
+            80% {
+                display: none;
+            }
+            
+            100% {
+                display: none;
+            }
+        }
+
+
+        
+        .b50{
+        
+            animation-name: ab50;
+            animation-duration: 5s;
+        }
+        @keyframes ab50 {
+            0% {
+                display: none;
+            }
+            
+            49% {
+                display: none;
+            }
+            
+            50% {
+                display: block;
+            }
+            
+            100% {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <h1 class="b0">0%</h1>
+        <h1 class="b50">50%</h1>
+        <!-- <h1 class="b100">100%</h1> -->
+    </div>
+
+</body>
+
+</html>
